@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no,
+	initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" >
+
+	<meta charset="UTF-8">
+	<title>Envio de Correos desde PHP | LAGESoft 2020</title>
+
+    <style type="text/css">
+
+     .borderless td, .borderless th {
+      border: hidden;
+     }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+    <div class="row">
+        <div class ="col-md-8 col-md-offset-2" >
+           <form method="post" action="enviar.php">
+
+            <table class = "table borderless" style="margin-top: 20px">
+                <h1>Enviar correo</h1>
+                 <tr>
+                    <td>
+                        <label for ="nombre">Nombre</label>
+                        <input type="text" id="nombre" name ="nombre" class="form-control mb-4" required="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for ="correo">Correo</label>
+                        <input type="email" id="correo" name ="correo" class="form-control mb-4" required="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for ="email"> Para </label>
+                        <input type="email" id="email" name ="email" class="form-control mb-4" placeholder="E-mail" required="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                     <label for ="asunto"> Asunto </label>
+                     <input type="text"  id="asunto" name ="asunto" value="" class="form-control" required="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                     <label for ="mensaje"> Mensaje </label>
+                     <textarea ide ="mensaje" class="form-control" name="mensaje" required="" placeholder="Deje su mensaje "></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn btn-info btn-block my-4" style="margin-top:5px; float:right; width:50%" type="submit">Enviar</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>
